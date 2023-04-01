@@ -2,17 +2,10 @@
  *  @author YOUR NAME HERE
  */
 public class Collatz {
-    /** Returns the nextNumber in a Collatz sequence. */
 
-    /** Buggy implementation of nextNumber! */
+    /** Returns the nextNumber in a Collatz sequence. */
     public static int nextNumber(int n) {
-        if (n  == 128) {
-            return 1;
-        } else if (n == 5) {
-            return 3 * n + 1;
-        } else {
-            return n * 2;
-        }
+        return n % 2 == 0 ? (n / 2) : (3 * n + 1);
     }
 
     public static void main(String[] args) {
